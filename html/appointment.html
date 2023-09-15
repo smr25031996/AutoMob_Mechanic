@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/html/home.html"><h1>AutoMob_Mechanic</h1></a>
+        <a href="home.html">Home</a>
+        |<a href="services.html">Services</a>|
+        <a href="booking.html">Booking</a>|
+        <a href="mailto:contact@automob.co.in "
+          >contact@automob.co.in
+          <img src="../images/email.jpeg" width="15px" alt="" /></a
+        >|
+        <a href="tel:99999999999"
+          >+91-999-999-999 <img src="../images/tele.jpeg" width="15px" alt=""
+        /></a>
+      </nav>
+    </header>
+    <hr />
+    <section>
+      <article>
+        <form action="booking-success.html">
+          <h1>Schedule Your Appointment</h1>
+          <label for="date">Appointment Date : </label
+          ><input type="date" required /> <br /><br />
+          <label for="address">Address : </label
+          ><textarea cols="30" rows="10" required></textarea> <br /><br />
+          <label for="city">City : </label>
+          <input required list="city" name="city" placeholder="city" />
+          <br /><br />
+          <label for="city">State : </label>
+          <input required list="State" name="State" placeholder="State" />
+          <datalist id="State">
+            <option value="Goa">Goa</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Gujrat">Gujrat</option>
+            <option value="Delhi">Delhi</option>
+            <option value="maharashtra">Maharashtra</option>
+          </datalist>
+
+          <br /><br />
+          <label for="notifications"> Send Notifications : </label>
+          <input type="radio" id="sms" name="notifications" value="sms" />
+          <label for="sms">SMS</label>
+
+          <input type="radio" id="email" name="notifications" value="email" />
+          <label for="email">Email</label>
+
+          
+          <br /><br />
+          <a href="/html/booking-success.html">
+          <button type="submit" >Book</button></a>
+        </form>
+      </article>
+    </section>
+    <hr />
+    <footer>Copyright &copy 2023 AutoMob_Mechanic.All Rights Reserved.</footer>
+  </body>
+</html>
